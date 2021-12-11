@@ -271,7 +271,7 @@ class MyDataSet(Data.Dataset):
 
 def showgraph(attn):
     for i in range(n_batchs):
-        fig = plt.figure(figsize=(n_heads, n_heads))
+        fig = plt.figure(figsize=(10, 8))
         for j in range(n_heads):
             sub_attn = attn[-1][i,j,...]
             sub_attn = sub_attn.data.cpu().numpy()
